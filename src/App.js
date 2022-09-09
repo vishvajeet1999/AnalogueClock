@@ -81,7 +81,7 @@ console.log((new Date(revisedTime).getSeconds()/60 + new Date(revisedTime).getMi
     <Clock secondRatio={!changed?secondRatio : new Date(revisedTime).getSeconds()/60 } 
     
     minuteRatio= {!changed? minuteRatio: ((new Date(revisedTime).getSeconds()/60 + new Date(revisedTime).getMinutes())/60)} 
-    hourRatio= {!changed? hourRatio : ((new Date(revisedTime).getSeconds()/60 + new Date(revisedTime).getMinutes()/60 +
+    hourRatio= {!changed? hourRatio : (((new Date(revisedTime).getSeconds()/60 + new Date(revisedTime).getMinutes())/60 +
     new Date(revisedTime).getHours())/12)} />
 
     <>
